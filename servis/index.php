@@ -3,54 +3,38 @@
 
 // Data Gejala dan Kerusakan
 $gejala = [
-    'p1' => 'Kekuatan Mesin lemah',
-    'p2' => 'Suara mesin yang kasar',
-    'p3' => 'Knalpot mengeluarkan asap putih',
-    'p4' => 'Kompresi di bawah standar',
-    'p5' => 'Boros Minyak Oli',
-    'p6' => 'Piston Tergores',
-    'p7' => 'Penurunan Akselerasi',
-    'p8' => 'Terjadi Slip Pada Mesin',
-    'p9' => 'Tidak Bisa Berjalan',
-    'p10' => 'Mesin Melambat pada saat berjalan',
-    'p11' => 'Api Busi Merah Kecil',
-    'p12' => 'Mesin Mati Total',
-    'p13' => 'Pemborosan bahan bakar',
-    'p14' => 'Penurunan Kompresi',
-    'p15' => 'Mesin tidak stabil',
-    'p16' => 'Asap hitam keluar dari knalpot',
-    'p17' => 'Pembekokan pada Klep',
-    'p18' => 'Mesin terdengar kasar',
-    'p19' => 'Kurangnya gaya pengereman',
-    'p20' => 'Pengereman tidak berfungsi',
-    'p21' => 'Lengket pada Rem',
-    'p22' => 'Mesin tidak dapat dihidupkan dengan starter listrik',
-    'p23' => 'Suara kasar saat menggunakan starter elektrik',
-    'p24' => 'Generator mulai panas',
-    'p25' => 'Saluran minyak Oli tidak beroperasi',
-    'p26' => 'Mesin terasa panas berlebihan',
-    'p27' => 'Minyak oli banyak ke bak mesin',
-    'p28' => 'Terjadi Jim pada mesin'
+    'p1' => 'Mesin mendadak mati',
+    'p2' => 'Terdapat pelumas pada kepala busi',
+    'p3' => 'Warna busi menjadi cokelat/kemerahan',
+    'p4' => 'Electrode meleleh',
+    'p5' => 'Indikator engine berkedip',
+    'p6' => 'Idle kasar saat RPM rendah',
+    'p7' => 'Tenaga melemah saat akselerasi',
+    'p8' => 'Akselerasi buruk',
+    'p9' => 'Konsumsi BBM boros',
+    'p10' => 'Suara mesin menggelitik',
+    'p11' => 'Tenaga mesin loyo',
+    'p12' => 'Terdengar bunyi gluduk saat lepas gas',
+    'p13' => 'Tiba-tiba lost power',
+    'p14' => 'Tidak ada air dalam radiator',
+    'p15' => 'Oli bercampur air',
+    'p16' => 'Bau terbakar di transmisi',
+    'p17' => 'Bau menyengat pada mesin',
+    'p18' => 'Tenaga mesin mendadak berkurang'
 ];
 
 $kerusakan = [
-    'k1' => 'Piston Rusak',
-    'k2' => 'Van Belt Rusak',
-    'k3' => 'CDI Rusak',
-    'k4' => 'Klep Rusak',
-    'k5' => 'Rem Rusak',
-    'k6' => 'Electric Starter Rusak',
-    'k7' => 'Pompa Oli Rusak'
+    'r1' => 'Kerusakan Busi',
+    'r2' => 'Kerusakan Injector',
+    'r3' => 'Kerusakan Premature Ignition',
+    'r4' => 'Mesin Overheat'
 ];
 
 $rules = [
-    'k1' => ['p1', 'p2', 'p3', 'p4', 'p5', 'p6'],
-    'k2' => ['p1', 'p2', 'p7', 'p8', 'p9'],
-    'k3' => ['p1', 'p10', 'p11', 'p12'],
-    'k4' => ['p13', 'p14', 'p15', 'p16', 'p17'],
-    'k5' => ['p18', 'p19', 'p20', 'p21'],
-    'k6' => ['p22', 'p23', 'p24'],
-    'k7' => ['p24', 'p25', 'p26', 'p27', 'p28']
+    'r1' => ['p1', 'p2', 'p3', 'p4', 'p5'],
+    'r2' => ['p6', 'p7', 'p8', 'p9'],
+    'r3' => ['p10', 'p11', 'p12', 'p13'],
+    'r4' => ['p1', 'p14', 'p15', 'p16', 'p17', 'p18']
 ];
 
 // Forward Chaining Function
