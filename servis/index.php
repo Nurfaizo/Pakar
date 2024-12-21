@@ -1,7 +1,5 @@
 <?php
-// Sistem Pakar dengan Forward Chaining dan Bootstrap
 
-// Data Gejala dan Kerusakan
 $gejala = [
     'p1' => 'Mesin mendadak mati',
     'p2' => 'Terdapat pelumas pada kepala busi',
@@ -37,7 +35,6 @@ $rules = [
     'r4' => ['p1', 'p14', 'p15', 'p16', 'p17', 'p18']
 ];
 
-// Forward Chaining Function
 function forwardChaining($gejalaInput, $rules, $kerusakan)
 {
     $hasil = [];
@@ -62,7 +59,7 @@ function forwardChaining($gejalaInput, $rules, $kerusakan)
     return $hasil;
 }
 
-// Jika Form Dikirim
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $gejalaInput = isset($_POST['gejala']) ? $_POST['gejala'] : [];
     $hasil = forwardChaining($gejalaInput, $rules, $kerusakan);
@@ -115,7 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <td><?php echo $item['kerusakan']; ?></td>
                         <td><?php echo $item['confidence']; ?>%</td>
                     </tr>
-                    <?php break; ?> <!-- Fokus pada persentase terbesar -->
+                    <?php break; ?> 
                 <?php endforeach; ?>
             </tbody>
         </table>
